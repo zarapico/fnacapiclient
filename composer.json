@@ -1,4 +1,7 @@
 {
+    "name": "zarapico/fnacapiclient",
+    "description": "composer library for FnacMarketplace/fnacapiclient",
+    "type": "library",
     "require": {
         "zendframework/zend-http" : "2.3.2",
         "zendframework/zend-uri" : "2.3.2",
@@ -11,5 +14,24 @@
         "symfony/yaml" : "2.0.*",
         "twbs/bootstrap": "^3.3",
         "components/jquery": "^2.2"
+    },    
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rayner Luis",
+            "email": "rayner.luis@somosinapsis.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "FnacApiClient\\": "src/",
+            "FnacApiGui\\": "FnacApiGui/src/"
+        }
+    },   
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
     }
 }
